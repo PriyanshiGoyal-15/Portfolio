@@ -26,15 +26,16 @@ const projectsData = [
         liveLink: "#"
     },
     {
-        id: 3,
-        title: "Lendi",
-        description: "A comprehensive SaaS starter registry and toolkit designed to accelerate product launches with battle-tested architectural patterns.",
-        category: "DEVELOPMENT",
-        image: "/lendiiWebsite.png",
-        primary: false,
-        githubLink: "",
-        liveLink: "https://dev.lendii.eu/"
+        id: 5, // Incrementing from your last ID
+        title: "Emora — Your Emotional Companion",
+        description: "A sophisticated, empathetic AI-driven wellness ecosystem and real-time mood analytics dashboard engineered to provide a safe, high-fidelity space for emotional reflection and mental clarity.",
+        category: "Mental Health & AI Wellness",
+        image: "/emora.png", // Using the beautiful logo we just generated
+        primary: true,
+        githubLink: "https://github.com/PriyanshiGoyal-15/EMORA.git",
+        liveLink: "https://getemoraai.vercel.app/"
     },
+
     {
         id: 4,
         title: "Aura Resume Analyzer",
