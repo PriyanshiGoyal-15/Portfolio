@@ -61,7 +61,7 @@ export const HeroSection = () => {
                                 COLLABORATE <ArrowRightIcon className="w-4 h-4" />
                             </button>
                         </a>
-                        <a href="/PriyanshiGoyal.pdf" download>
+                        <a href="/Priyanshi_Goyal.pdf" download>
                             <button className="border border-gray-300 hover:border-gray-800 transition-colors px-6 py-3 sm:px-8 sm:py-4 rounded-full font-bold text-[10px] sm:text-xs tracking-[0.2em] uppercase flex items-center gap-3 bg-white/50 backdrop-blur-sm">
                                 RESUME <DownloadIcon className="w-4 h-4" />
                             </button>
