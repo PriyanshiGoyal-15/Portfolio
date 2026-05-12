@@ -14,6 +14,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://priyanshi-goyal.vercel.app/"),
   title: {
     default: "Priyanshi Goyal | Developer & Designer",
     template: "%s | Priyanshi Goyal",
@@ -40,7 +41,7 @@ export const metadata: Metadata = {
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
     images: [
       {
-        url: "https://priyanshi-goyal.vercel.app/pg-logo.png",
+        url: "/pg-logo.png",
         width: 1200,
         height: 630,
         alt: "Priyanshi Goyal Portfolio",
@@ -51,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
-    images: ["https://priyanshi-goyal.vercel.app/pg-logo.png"],
+    images: ["/pg-logo.png"],
     creator: "@priyanshi",
   },
   robots: {
