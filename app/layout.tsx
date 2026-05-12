@@ -35,16 +35,16 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://priyanshi-goyal.vercel.app/", // Replace with your actual domain
+    url: "https://priyanshi-goyal.vercel.app/",
     siteName: "Priyanshi Goyal Portfolio",
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
     images: [
       {
-        url: "https://priyanshi-goyal.vercel.app/pg-logo.png",
+        url: "https://priyanshi-goyal.vercel.app/og-banner.png",
         width: 1200,
         height: 630,
-        alt: "Priyanshi Goyal Portfolio",
+        alt: "Priyanshi Goyal | Developer & Designer",
       },
     ],
   },
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
-    images: ["https://priyanshi-goyal.vercel.app/pg-logo.png"],
+    images: ["https://priyanshi-goyal.vercel.app/og-banner.png"],
     creator: "@priyanshi",
   },
   robots: {
