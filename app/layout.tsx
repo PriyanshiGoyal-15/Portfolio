@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
     images: [
       {
-        url: "/pg-logo.png",
+        url: "https://priyanshi-goyal.vercel.app/pg-logo.png",
         width: 1200,
         height: 630,
         alt: "Priyanshi Goyal Portfolio",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
-    images: ["/pg-logo.png"],
+    images: ["https://priyanshi-goyal.vercel.app/pg-logo.png"],
     creator: "@priyanshi",
   },
   robots: {
