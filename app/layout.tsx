@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
     images: [
       {
-        url: "/profile.png",
+        url: "/pg-logo.png",
         width: 1200,
         height: 630,
         alt: "Priyanshi Goyal Portfolio",
@@ -51,7 +51,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
-    images: ["/profile.png"],
+    images: ["/pg-logo.png"],
     creator: "@priyanshi", // Replace with your actual twitter handle if available
   },
   robots: {
