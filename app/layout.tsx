@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://priyanshigoyal.dev", // Replace with your actual domain
+    url: "https://priyanshi-goyal.vercel.app/", // Replace with your actual domain
     siteName: "Priyanshi Goyal Portfolio",
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
@@ -52,7 +52,7 @@ export const metadata: Metadata = {
     title: "Priyanshi Goyal | Developer & Designer",
     description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
     images: ["/pg-logo.png"],
-    creator: "@priyanshi", // Replace with your actual twitter handle if available
+    creator: "@priyanshi",
   },
   robots: {
     index: true,
