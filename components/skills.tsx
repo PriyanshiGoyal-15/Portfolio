@@ -38,7 +38,7 @@ const skillCategories = [
         ]
     },
     {
-        category: "Databases & DevOps",
+        category: "Backend, DB & DevOps",
         icon: (
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="w-5 h-5">
                 <ellipse cx="12" cy="5" rx="9" ry="3"></ellipse>
@@ -47,11 +47,12 @@ const skillCategories = [
             </svg>
         ),
         items: [
+            { name: "Node.js", primary: true },
+            { name: "Express.js", primary: true },
             { name: "MongoDB", primary: true },
+            { name: "Git / GitHub", primary: true },
             { name: "CI / CD", primary: false },
-            { name: "GitHub Actions", primary: false },
-            // { name: "PM2", primary: false },
-            { name: "Git / GitHub", primary: false }
+            { name: "GitHub Actions", primary: false }
         ]
     },
     {
@@ -62,11 +63,12 @@ const skillCategories = [
             </svg>
         ),
         items: [
-            { name: "NPM", primary: false },
             { name: "VS Code", primary: true },
-            { name: "Antigravity", primary: true },
-            { name: "Chrome DevTools", primary: false },
-            { name: "Postman", primary: true }
+            { name: "Figma", primary: true },
+            { name: "Vite", primary: true },
+            { name: "Postman", primary: true },
+            { name: "NPM", primary: false },
+            { name: "Chrome DevTools", primary: false }
         ]
     },
     {
