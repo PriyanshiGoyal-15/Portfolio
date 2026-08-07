@@ -6,9 +6,9 @@ import React, { useState } from 'react'
 const projectsData = [
     {
         id: 1,
-        title: "SendHub",
-        description: "A full-stack campaign management platform built with React and Node.js, featuring real-time analytics with Recharts, seamless email/SMS broadcasting integrations via Twilio and Nodemailer, and dynamic template management.",
-        category: "DEVELOPMENT",
+        title: "SendHub - Campaign Manager",
+        description: "A full-stack SaaS platform engineered for campaign management platform built with React and Node.js, featuring real-time analytics with Recharts, seamless email/SMS broadcasting integrations via Twilio and Nodemailer, and dynamic template management.",
+        category: "B2B Saas Platform",
         image: "/sendhub.png",
         primary: true,
         liveLink: "https://sendhub-client.vercel.app/"
