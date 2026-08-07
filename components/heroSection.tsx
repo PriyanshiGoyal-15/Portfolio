@@ -41,7 +41,7 @@ export const HeroSection = () => {
 
                     {/* Sub text and role */}
                     <div className="flex flex-col lg:flex-row lg:items-center justify-between mt-6 max-w-3xl gap-6">
-                        <div className="flex items-center gap-4 text-xs sm:text-sm font-bold tracking-[0.25em] whitespace-nowrap">
+                        <div className="flex items-center gap-4 text-xs smx:text-sm font-bold tracking-[0.25em] whitespace-nowrap">
                             <div className="w-8 sm:w-12 h-px bg-black"></div>
                             DEVELOPER <span className="text-zinc-500 font-bold">&amp;</span> DESIGNER
                         </div>

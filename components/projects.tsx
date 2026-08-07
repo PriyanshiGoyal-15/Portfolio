@@ -4,16 +4,14 @@ import React, { useState } from 'react'
 //if primary : true then only github option will show on hover
 
 const projectsData = [
-
     {
         id: 1,
-        title: "Blog",
-        description: "A high-performance technical publishing platform built with Next.js 15, featuring dynamic 3D hero sections, full-stack moderation, and optimized SEO.",
+        title: "SendHub",
+        description: "A full-stack campaign management platform built with React and Node.js, featuring real-time analytics with Recharts, seamless email/SMS broadcasting integrations via Twilio and Nodemailer, and dynamic template management.",
         category: "DEVELOPMENT",
-        image: "/blogWebsite.png",
+        image: "/sendhub.png",
         primary: true,
-        githubLink: "https://github.com/PriyanshiGoyal-15/Blog-App",
-        liveLink: "https://blog-app-jet-delta.vercel.app/"
+        liveLink: "https://sendhub-client.vercel.app/"
     },
     {
         id: 2,
@@ -26,7 +24,7 @@ const projectsData = [
         liveLink: "#"
     },
     {
-        id: 5, // Incrementing from your last ID
+        id: 3, // Incrementing from your last ID
         title: "Emora — Your Emotional Companion",
         description: "A sophisticated, empathetic AI-driven wellness ecosystem and real-time mood analytics dashboard engineered to provide a safe, high-fidelity space for emotional reflection and mental clarity.",
         category: "Mental Health & AI Wellness",
@@ -35,7 +33,6 @@ const projectsData = [
         githubLink: "https://github.com/PriyanshiGoyal-15/EMORA.git",
         liveLink: "https://getemoraai.vercel.app/"
     },
-
     {
         id: 4,
         title: "Aura Resume Analyzer",
@@ -46,6 +43,16 @@ const projectsData = [
         githubLink: "https://github.com/PriyanshiGoyal-15/Aura-Resume_Analyzer.git",
         liveLink: "https://aura-resume-analyzer.vercel.app/"
     },
+    {
+        id: 5,
+        title: "Blog",
+        description: "A high-performance technical publishing platform built with Next.js 15, featuring dynamic 3D hero sections, full-stack moderation, and optimized SEO.",
+        category: "DEVELOPMENT",
+        image: "/blogWebsite.png",
+        primary: true,
+        githubLink: "https://github.com/PriyanshiGoyal-15/Blog-App",
+        liveLink: "https://blog-app-jet-delta.vercel.app/"
+    }
 ]
 
 
@@ -102,7 +109,7 @@ const Projects = () => {
 
                             {/* Hover Overlay Buttons - Desktop Only */}
                             <div className="absolute inset-0 opacity-0 md:group-hover:opacity-100 transition-all duration-300 items-center justify-center gap-4 z-20 hidden md:flex">
-                                {project.primary && (
+                                {project.primary && project.githubLink && (
                                     <a
                                         href={project.githubLink}
                                         target="_blank"
@@ -132,7 +139,7 @@ const Projects = () => {
 
                         {/* Mobile Links - Visible only on mobile */}
                         <div className="flex md:hidden items-center gap-4 mb-4 mt-1">
-                            {project.primary && (
+                            {project.primary && project.githubLink && (
                                 <a
                                     href={project.githubLink}
                                     target="_blank"
