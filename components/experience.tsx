@@ -1,156 +1,184 @@
-import React from 'react'
+import React from "react";
 
 const experienceData = [
-    {
-        id: 1,
-        company: "Fonix Technology",
-        role: "Frontend Developer",
-        duration: "Dec 2025 — Present",
-        location: "Jaipur, Rajasthan",
-        accomplishments: [
-            "Engineered a reusable React component library adopted across 3+ internal products, reducing UI development time by 25% and enforcing consistent design system standards.",
-            "Architected performant Next.js application shells with SSR/SSG strategies, improving Core Web Vitals scores and achieving sub-2s LCP across key pages.",
-            "Integrated TypeScript strict mode across the codebase, eliminating a class of runtime errors and improving developer confidence during large-scale refactors."
-        ],
-        tools: "REACT.JS, NEXT.JS, TAILWIND CSS, TYPESCRIPT, Redux, Git, Github, Figma, VITE, POSTMAN"
-    },
-    {
-        id: 2,
-        company: "Edu-Tantr",
-        role: "MERN Stack Developer (Internship)",
-        duration: "Aug 2025 — Nov 2025",
-        location: "Remote",
-        accomplishments: [
-            "Delivered pixel-perfect, responsive UI modules in React + Tailwind CSS under production deadlines.",
-            "Optimized Redux state architecture to eliminate redundant API calls, reducing average page load time by ~30% on data-heavy dashboard views.",
-            "Collaborated cross-functionally with backend engineers via Postman-driven API contracts, cutting integration friction and accelerating feature delivery by an estimated 2x."
-        ],
-        tools: "REACT.JS, TAILWIND CSS, Git, Github, VITE, POSTMAN, Redux"
-    }
+  {
+    id: 1,
+    company: "Fonix Technologies",
+    role: "Frontend Developer",
+    duration: "Dec 2025 — Present",
+    location: "Jaipur, Rajasthan",
+    type: "Full-Time",
+    metrics: [
+      "30% Less Re-renders",
+      "40% Load Time Improvement",
+      "Component Architecture",
+    ],
+    accomplishments: [
+      "Develop and ship production-grade React.js features for an e-commerce platform, including product discovery, filtering, cart, and authentication workflows.",
+      "Build reusable, responsive UI components using React.js, Redux Toolkit, and Tailwind CSS.",
+      "Reduced unnecessary React re-renders by 30% through state-management and component-rendering optimization.",
+      "Integrate REST APIs and resolve frontend, state, and API-integration issues in collaboration with backend developers and designers.",
+    ],
+    tools: [
+      "React.js",
+      "Redux Toolkit",
+      "Tailwind CSS",
+      "TypeScript",
+      "Next.js",
+      "REST APIs",
+      "Git",
+      "GitHub",
+    ],
+  },
+  {
+    id: 2,
+    company: "Edutantr",
+    role: "MERN Stack Intern",
+    duration: "Aug 2025 — Nov 2025",
+    location: "Remote",
+    type: "Internship",
+    metrics: [
+      "Interactive Menu Flows",
+      "REST API Data Pipelines",
+      "Full-Stack Collaboration",
+    ],
+    accomplishments: [
+      "Developed React.js interfaces for a restaurant ordering platform covering menu browsing, cart management, and order submission workflows.",
+      "Integrated REST APIs and handled application data for reliable user interactions and order processing.",
+      "Participated in debugging, code reviews, and pair programming.",
+    ],
+    tools: [
+      "React.js",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Redux",
+      "Tailwind CSS",
+      "REST APIs",
+      "Git",
+    ],
+  },
 ];
 
-const BotanicalCorner = ({ className }: { className?: string }) => (
-    <svg className={className} width="80" height="80" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M0 0 C40 0 60 10 75 40 C85 60 80 85 65 95 C55 102 40 95 45 80 C48 70 60 70 65 80 C68 85 65 90 60 90" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" fill="none" />
-        <path d="M20 5 C45 5 55 25 50 45 C45 60 30 65 25 55 C20 45 35 40 40 50" stroke="currentColor" strokeWidth="1" strokeLinecap="round" fill="none" />
-        <path d="M25 0 C35 -5 45 5 25 15Z" fill="currentColor" opacity="0.3" />
-        <path d="M45 15 C60 10 65 25 45 35Z" fill="currentColor" opacity="0.3" />
-        <path d="M65 40 C80 35 85 50 65 60Z" fill="currentColor" opacity="0.3" />
-        <path d="M35 25 C45 20 50 30 35 40Z" fill="currentColor" opacity="0.2" />
-        <circle cx="35" cy="10" r="2" fill="currentColor" />
-        <circle cx="60" cy="25" r="1.5" fill="currentColor" />
-        <circle cx="85" cy="55" r="2" fill="currentColor" />
-        <circle cx="75" cy="75" r="1" fill="currentColor" />
-    </svg>
-);
-
 const Experience = () => {
-    return (
-        <section id="experience" className="relative w-full max-w-[1440px] mx-auto px-4 sm:px-8 md:px-12 lg:px-16 py-12 md:py-24 overflow-hidden ">
+  return (
+    <section
+      id="experience"
+      className="relative w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-8 md:py-10 overflow-hidden bg-white"
+    >
+      {/* Header */}
+      <div className="flex flex-col mb-12 md:mb-16">
+        <div className="flex items-center gap-4 mb-4">
+          <div className="w-12 h-px bg-zinc-300"></div>
+          <span className="text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase">
+            Work Experience
+          </span>
+        </div>
+        <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[6rem] font-black leading-[0.9] tracking-tighter whitespace-nowrap">
+          <span className="text-black">Work & </span>
+          <span className="text-zinc-400">Impact ...</span>
+        </h2>
+      </div>
 
-            {/* Header */}
-            <div className="flex flex-col mb-12 md:mb-16">
-                <div className="flex items-center gap-4 mb-4">
-                    <div className="w-12 h-px bg-gray-300"></div>
-                    <span className="text-xs font-bold tracking-[0.2em] text-gray-400 uppercase">Experience</span>
+      {/* Experience List */}
+      <div className="flex flex-col max-w-5xl w-full mx-auto pb-6 gap-8">
+        {experienceData.map((exp, index) => (
+          <div
+            key={exp.id}
+            className="relative w-full flex flex-col md:flex-row bg-white p-7 sm:p-10 rounded-3xl group border border-zinc-200/90 hover:border-black hover:shadow-[0_20px_50px_rgba(0,0,0,0.08)] hover:-translate-y-1 transition-all duration-500 overflow-hidden"
+          >
+            {/* Decorative Background Accent */}
+            <div className="absolute -right-8 -top-8 w-32 h-32 bg-emerald-50/60 rounded-full blur-xl group-hover:scale-150 transition-all duration-700 pointer-events-none -z-10"></div>
+
+            {/* Meta Data Left Column */}
+            <div className="relative z-10 w-full md:w-[28%] lg:w-[25%] flex flex-col gap-4 mb-6 md:mb-0 shrink-0 md:pr-6 md:border-r border-zinc-150">
+              {/* Duration Badge */}
+              <div className="flex flex-col gap-1">
+                <span className="text-[9.5px] font-mono font-bold tracking-[0.15em] text-zinc-400 uppercase">
+                  Period
+                </span>
+                <span className="text-[13.5px] sm:text-[14px] font-black text-zinc-900 font-mono">
+                  {exp.duration}
+                </span>
+              </div>
+
+              {/* Location & Type */}
+              <div className="flex flex-col gap-1">
+                <span className="text-[9.5px] font-mono font-bold tracking-[0.15em] text-zinc-400 uppercase">
+                  Location & Type
+                </span>
+                <div className="flex flex-wrap items-center gap-2">
+                  <span className="text-[13px] font-bold text-zinc-700">
+                    {exp.location}
+                  </span>
+                  <span className="text-[10px] font-mono font-bold bg-zinc-100 text-zinc-700 px-2 py-0.5 rounded">
+                    {exp.type}
+                  </span>
                 </div>
-                <h2 className="text-4xl sm:text-6xl md:text-7xl lg:text-[6rem] font-black leading-[0.9] tracking-tighter whitespace-nowrap">
-                    <span className="text-black">Work & </span>
-                    <span className="text-gray-400">Impact</span>
-                    <span className="text-gray-300">...</span>
-                </h2>
-            </div>
+              </div>
 
-            {/* Experience List */}
-            <div className="flex flex-col max-w-6xl w-full mx-auto pb-10">
-                {experienceData.map((exp, index) => (
-                    <React.Fragment key={exp.id}>
-                        <div
-                            className="relative w-full flex flex-col md:flex-row bg-white p-8 sm:p-10 md:p-14 group border border-gray-100 transition-all duration-300"
-                        >
-                            {/* Botanical Corner Decorations */}
-                            <BotanicalCorner className="absolute top-0 left-0 text-gray-500 drop-shadow-sm transition-colors group-hover:text-gray-300" />
-                            <BotanicalCorner className="absolute top-0 right-0 text-gray-500 scale-x-[-1] drop-shadow-sm transition-colors group-hover:text-gray-300" />
-                            <BotanicalCorner className="absolute bottom-0 left-0 text-gray-500 scale-y-[-1] drop-shadow-sm transition-colors group-hover:text-gray-300" />
-                            <BotanicalCorner className="absolute bottom-0 right-0 text-gray-500 scale-y-[-1] scale-x-[-1] drop-shadow-sm transition-colors group-hover:text-gray-300" />
-
-                            {/* Meta Data Left Column */}
-                            <div className="relative z-10 w-full md:w-[25%] lg:w-[22%] flex flex-col gap-5 md:gap-6 mb-6 md:mb-0 shrink-0 md:pr-6">
-                                {/* Duration */}
-                                <div className="flex flex-col gap-1">
-                                    <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.15em] text-gray-400 uppercase">
-                                        Duration
-                                    </span>
-                                    <span className="text-[14px] sm:text-[15px] font-extrabold text-[#111827]">
-                                        {exp.duration}
-                                    </span>
-                                </div>
-
-                                {/* Location */}
-                                <div className="flex flex-col gap-1">
-                                    <span className="text-[9px] sm:text-[10px] font-bold tracking-[0.15em] text-gray-400 uppercase">
-                                        Location
-                                    </span>
-                                    <span className="text-[14px] sm:text-[15px] font-extrabold text-[#111827]">
-                                        {exp.location}
-                                    </span>
-                                </div>
-                            </div>
-
-                            {/* Content Right Column */}
-                            <div className="relative z-10 w-full md:w-[75%] lg:w-[78%] flex flex-col pt-6 md:pt-0 md:pl-6 lg:pl-10">
-
-                                {/* Aesthetic Gradient Divider */}
-                                <div className="absolute top-0 left-10 right-10 h-px bg-linear-to-r from-transparent via-gray-200 to-transparent md:hidden" />
-                                <div className="hidden md:block absolute left-0 top-10 bottom-10 w-px bg-linear-to-b from-transparent via-gray-200 to-transparent" />
-
-                                {/* Role Header */}
-                                <div className="flex flex-col gap-1 mb-5 md:mb-6">
-                                    <h3 className="text-[22px] sm:text-2xl md:text-[26px] font-black text-black uppercase tracking-tight">
-                                        {exp.company}
-                                    </h3>
-                                    <span className="text-[11px] font-bold tracking-[0.15em] text-[#0fa368] uppercase font-mono">
-                                        {exp.role}
-                                    </span>
-                                </div>
-
-                                {/* Accomplishments */}
-                                <ul className="flex flex-col gap-2.5 mb-6 md:mb-8">
-                                    {exp.accomplishments.map((point, i) => (
-                                        <li key={i} className="flex items-start gap-3">
-                                            <span className="text-gray-300 mt-[5.5px] text-[18px] leading-none shrink-0">•</span>
-                                            <span className="text-[16px] sm:text-[14.5px] font-normal text-[#4b5563] leading-[1.6]">
-                                                {point}
-                                            </span>
-                                        </li>
-                                    ))}
-                                </ul>
-
-                                {/* Tools Footer */}
-                                <div className="flex items-center flex-wrap gap-2 text-[10px] sm:text-[11px] uppercase font-mono mt-auto">
-                                    <span className="font-extrabold tracking-[0.2em] text-black">
-                                        Tools <span className="font-normal mx-0.5">:</span>
-                                    </span>
-                                    <span className="font-bold tracking-[0.15em] text-gray-500">
-                                        {exp.tools}
-                                    </span>
-                                </div>
-
-                            </div>
-                        </div>
-
-                        {/* Timeline Connector Line */}
-                        {index !== experienceData.length - 1 && (
-                            <div className="flex justify-center w-full ">
-                                <div className="h-16 sm:h-24 w-[2.5px] bg-linear-to-t from-transparent via-[#0fa368]/40 to-transparent"></div>
-                            </div>
-                        )}
-                    </React.Fragment>
+              {/* Highlights Chips */}
+              <div className="flex flex-col gap-1.5 mt-auto pt-4 border-t border-zinc-100">
+                {exp.metrics.map((m, idx) => (
+                  <span
+                    key={idx}
+                    className="text-[10px] font-mono font-bold text-emerald-800 bg-emerald-50 px-2 py-1 rounded border border-emerald-200/60 flex items-center gap-1.5"
+                  >
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-500"></span>
+                    {m}
+                  </span>
                 ))}
+              </div>
             </div>
 
-        </section>
-    )
-}
+            {/* Content Right Column */}
+            <div className="relative z-10 w-full md:w-[72%] lg:w-[75%] flex flex-col md:pl-8">
+              {/* Role Header */}
+              <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-2 mb-5">
+                <div className="flex flex-col">
+                  <h3 className="text-[22px] sm:text-[24px] font-black text-black uppercase tracking-tight group-hover:text-zinc-800 transition-colors">
+                    {exp.company}
+                  </h3>
+                  <span className="text-[12px] font-mono font-bold tracking-[0.15em] text-emerald-600 uppercase">
+                    {exp.role}
+                  </span>
+                </div>
+              </div>
 
-export default Experience
+              {/* Accomplishments */}
+              <ul className="flex flex-col gap-3 mb-6">
+                {exp.accomplishments.map((point, i) => (
+                  <li key={i} className="flex items-start gap-3">
+                    <span className="text-emerald-500 mt-1 text-[12px] shrink-0 font-bold">
+                      ▹
+                    </span>
+                    <span className="text-[14px] sm:text-[14.5px] font-normal text-zinc-600 leading-[1.6]">
+                      {point}
+                    </span>
+                  </li>
+                ))}
+              </ul>
+
+              {/* Tools Footer */}
+              <div className="flex flex-wrap items-center gap-1.5 mt-auto pt-4 border-t border-zinc-100">
+                <span className="text-[10px] font-mono font-bold uppercase tracking-wider text-zinc-400 mr-1">
+                  Stack:
+                </span>
+                {exp.tools.map((t, idx) => (
+                  <span
+                    key={idx}
+                    className="text-[10.5px] font-mono font-bold text-zinc-800 bg-zinc-50 border border-zinc-200/80 px-2.5 py-1 rounded"
+                  >
+                    {t}
+                  </span>
+                ))}
+              </div>
+            </div>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+export default Experience;

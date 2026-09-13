@@ -64,24 +64,24 @@ const accents = {
 // Coding Journey Timeline Details
 const journeyDetails = {
     2023: {
-        title: "Foundation & First Lines",
-        desc: "Discovered a deep passion for web engineering. Focused on mastering advanced JavaScript, HTML5 Canvas experiments, and core CSS architectures. Built responsive mini-utilities and custom templates.",
-        metrics: ["10k+ Lines of Code", "5+ Mini Apps Shipped", "Tailwind CSS & Grid Mastery"]
+        title: "Foundation & Core Web Engineering",
+        desc: "Mastered modern JavaScript (ES6+), HTML5 semantic structure, CSS3 responsive layout architectures, and component fundamentals.",
+        metrics: ["JavaScript ES6+", "HTML5 & CSS3", "Tailwind CSS"]
     },
     2024: {
-        title: "Diving into React & Next.js",
-        desc: "Adopted modern component patterns, Server Components, and Tailwind CSS. Built complex single-page apps, portfolio prototypes, and API routing structures using Node.js and MongoDB.",
-        metrics: ["Next.js App Router", "Full Stack CRUD Apps", "First Client Contracts"]
+        title: "React, Next.js & Full-Stack MERN",
+        desc: "Built full-stack single-page applications, interactive prototypes, and REST API routing architectures using React, Next.js, Node.js, and MongoDB.",
+        metrics: ["React.js & Next.js", "Redux Toolkit", "REST API Integrations"]
     },
     2025: {
-        title: "Advanced Systems & Performance",
-        desc: "Architected optimized database schemas, scaled applications, and fine-tuned Web Vitals. Implemented custom vector visualizations, state management engines, and high-fidelity layouts.",
-        metrics: ["MongoDB Database Design", "90% Lighthouse Score", "100+ GitHub Commits"]
+        title: "Production Engineering & Performance",
+        desc: "Engineered production UI features at Fonix Technologies and Edutantr, cutting unnecessary React re-renders by 30% and boosting load times by up to 40%.",
+        metrics: ["30% Less Re-renders", "40% Load Time Boost", "Component Architecture"]
     },
     2026: {
-        title: "Scale, Micro-UX & Premium Design",
-        desc: "Engineering production-ready user interfaces with meticulous attention to detail, motion physics, and clean modular structures. Focused on crafting highly interactive, client-impressing client products.",
-        metrics: ["High-Fidelity Animations", "Modular Typescript", "Global Teams Integration"]
+        title: "Scalable Architecture & Modern UI",
+        desc: "Engineering high-performance, accessible, and responsive frontend systems with TypeScript, Next.js App Router, and clean state management.",
+        metrics: ["TypeScript Strict", "Next.js & Turbopack", "Immediate Joiner"]
     }
 };
 
@@ -608,7 +608,7 @@ function About() {
             onMouseMove={handleMouseMove}
             onMouseEnter={() => setIsHovered(true)}
             onMouseLeave={() => setIsHovered(false)}
-            className="relative w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 md:py-24 overflow-hidden bg-white"
+            className="relative w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-8 md:py-10 overflow-hidden bg-white"
         >
             {/* Dynamic Spotlight tracker */}
             <div 
@@ -940,16 +940,32 @@ function About() {
                     {/* Sub Heading */}
                     <div className="flex items-center gap-3 mb-6 select-none">
                         <span className={`w-1.5 h-1.5 rounded-full ${curAccent.bg}`}></span>
-                        <span className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase font-sans">Full Stack Developer</span>
+                        <span className="text-[10px] sm:text-xs font-bold tracking-[0.2em] text-zinc-400 uppercase font-sans">Frontend Developer</span>
                     </div>
 
-                    {/* Title */}
-                    <h3 className="text-2xl sm:text-4xl md:text-5xl lg:text-[40px] font-black leading-[1.1] tracking-tighter text-black mb-8 max-w-4xl select-none">
-                        I build fast, scalable web applications with a focus on <span className="text-zinc-400">clean design</span> and real-world performance.
+                    {/* Title & Bio */}
+                    <h3 className="text-2xl sm:text-3xl md:text-4xl font-black leading-[1.15] tracking-tight text-black mb-6 max-w-4xl select-none">
+                        Crafting production web applications with a focus on <span className="text-zinc-400">clean UI</span>, reusable architecture & performance.
                     </h3>
 
+                    <div className="flex flex-col gap-4 text-zinc-600 text-[14.5px] sm:text-[15px] leading-relaxed font-normal mb-8 max-w-4xl">
+                        <p>
+                            I am a Frontend Developer with <strong className="text-black font-bold">1+ year of professional experience</strong> building production web applications using <strong className="text-black font-semibold">React.js, Next.js, TypeScript, Redux Toolkit, Tailwind CSS</strong>, and REST APIs.
+                        </p>
+                        <p>
+                            At <strong className="text-black font-bold">Fonix Technologies</strong>, I work on reusable UI components, API integrations, state management, responsive interfaces, debugging, and frontend performance. My work has included <strong className="text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold">reducing unnecessary React re-renders by 30%</strong> and <strong className="text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded font-bold">improving load time by up to 40%</strong> across project work.
+                        </p>
+                        <p>
+                            I also have hands-on MERN experience with Node.js, Express.js, and MongoDB, which helps me understand complete product flows beyond the UI layer. I enjoy building practical products — from AI-powered applications and real-time dashboards to authenticated platforms and automation tools.
+                        </p>
+                        <div className="p-3.5 bg-emerald-50/70 border border-emerald-200/80 rounded-xl text-emerald-900 font-medium text-[13px] sm:text-[13.5px] flex items-center gap-2">
+                            <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse shrink-0"></span>
+                            <span>Currently seeking a <strong className="font-bold">Frontend / React / Next.js opportunity outside Jaipur</strong> • <strong>Immediate Joiner</strong> • Open to relocation across India.</span>
+                        </div>
+                    </div>
+
                     {/* Journey Timeline Slider Widget */}
-                    <div className="mb-8 p-6 bg-zinc-50/50 border border-zinc-200/60 rounded-2xl shadow-sm">
+                    <div className="mb-8 p-6 bg-zinc-50/50 border border-zinc-200/60 rounded-2xl shadow-xs">
                         <div className="flex items-center justify-between mb-4 select-none">
                             <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-400 uppercase">My Journey Timeline</span>
                             <span className={`text-xs font-mono font-bold px-2 py-0.5 rounded ${curAccent.badge}`}>
@@ -985,21 +1001,21 @@ function About() {
                         </div>
 
                         {/* Journey Morphed Content */}
-                        <div className="min-h-[140px] flex flex-col justify-between">
+                        <div className="min-h-[120px] flex flex-col justify-between">
                             <div>
-                                <h4 className="text-lg font-extrabold text-zinc-800 mb-2 leading-tight flex items-center gap-2 select-none">
+                                <h4 className="text-base font-extrabold text-zinc-800 mb-1.5 leading-tight flex items-center gap-2 select-none">
                                     <span className={`w-1.5 h-3.5 rounded-full ${curAccent.bg}`}></span>
                                     {journeyDetails[journeyYear].title}
                                 </h4>
-                                <p className="text-zinc-500 text-sm sm:text-base leading-relaxed font-medium">
+                                <p className="text-zinc-600 text-xs sm:text-sm leading-relaxed font-normal">
                                     {journeyDetails[journeyYear].desc}
                                 </p>
                             </div>
                             
                             {/* Year-specific indicators */}
-                            <div className="flex flex-wrap gap-2 mt-4 pt-4 border-t border-zinc-150 select-none">
+                            <div className="flex flex-wrap gap-2 mt-4 pt-3 border-t border-zinc-150 select-none">
                                 {journeyDetails[journeyYear].metrics.map((metric, idx) => (
-                                    <span key={idx} className="text-[10px] font-mono font-bold text-zinc-500 bg-white border border-zinc-200/80 rounded px-2.5 py-1 flex items-center gap-1.5">
+                                    <span key={idx} className="text-[10px] font-mono font-bold text-zinc-600 bg-white border border-zinc-200/80 rounded px-2.5 py-1 flex items-center gap-1.5">
                                         <span className={`w-1.5 h-1.5 rounded-full ${curAccent.bg}`}></span>
                                         {metric}
                                     </span>
@@ -1008,37 +1024,20 @@ function About() {
                         </div>
                     </div>
 
-                    {/* Divider */}
-                    <div className="w-full h-px bg-zinc-150 mb-6"></div>
-
                     {/* Info Bento Grid */}
                     <div className="grid grid-cols-2 md:grid-cols-3 gap-4 mb-6">
                         
                         {/* Jaipur Location Bento Card */}
                         <div className="relative overflow-hidden flex flex-col gap-2 p-4 rounded-2xl border border-zinc-150/70 bg-white/50 backdrop-blur-sm hover:border-zinc-800 transition-all duration-300 group">
-                            {/* SVG Pulse Radar Map Marker */}
-                            <div className="absolute right-2 bottom-2 w-10 h-10 border border-zinc-200/50 rounded-full flex items-center justify-center pointer-events-none opacity-40 group-hover:opacity-100 transition-opacity">
-                                <span className={`w-1.5 h-1.5 rounded-full ${curAccent.bg} animate-ping`}></span>
-                                <span className={`w-1 h-1 rounded-full absolute ${curAccent.bg}`}></span>
-                            </div>
-                            
-                            <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-455 uppercase select-none">Location</span>
+                            <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-400 uppercase select-none">Location & Mobility</span>
                             <span className="text-sm sm:text-[15px] font-black text-zinc-800">Jaipur, India</span>
-                            <span className="text-[9px] font-mono text-zinc-400 tracking-tighter select-none">26.9124° N, 75.7873° E</span>
+                            <span className="text-[10px] font-bold text-emerald-600 select-none">Open to Relocation</span>
                             
-                            {/* Live Clock & Season Weather (IST Hydration Proof) */}
+                            {/* Live Clock (IST Hydration Proof) */}
                             <div className="text-[9px] font-mono text-zinc-500 mt-2 flex flex-col gap-1 select-none font-bold border-t border-zinc-100 pt-2">
                                 <div className="flex items-center gap-1.5">
                                     <span className={`w-1.5 h-1.5 rounded-full ${curAccent.bg} animate-pulse`}></span>
-                                    {isMounted && localTime ? `${localTime} IST` : 'Loading...'}
-                                </div>
-                                <div className="flex items-center gap-1.5 text-zinc-400">
-                                    {weather.icon === 'sun' ? (
-                                        <svg className="w-3 h-3 text-amber-500 animate-spin" style={{ animationDuration: '10s' }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
-                                    ) : (
-                                        <svg className="w-3 h-3 text-indigo-400 animate-pulse" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
-                                    )}
-                                    <span>{isMounted ? `${weather.temp} • ${weather.condition}` : 'Calculating...'}</span>
+                                    {isMounted && localTime ? `${localTime} IST` : 'IST Local Time'}
                                 </div>
                             </div>
                         </div>
@@ -1051,18 +1050,18 @@ function About() {
                                 <span className={`w-1.5 h-1.5 rounded-full ${curAccent.bg}`}></span>
                             </div>
                             
-                            <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-455 uppercase select-none">Status</span>
-                            <span className={`text-sm sm:text-[15px] font-black transition-colors ${curAccent.text}`}>Open to Work</span>
-                            <span className="text-[10px] font-mono text-zinc-500 mt-auto select-none font-bold">Contract / Full-time</span>
-                            <span className="text-[9px] font-mono text-zinc-400 select-none">Global Ready</span>
+                            <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-400 uppercase select-none">Availability</span>
+                            <span className={`text-sm sm:text-[15px] font-black transition-colors ${curAccent.text}`}>Immediate Joiner</span>
+                            <span className="text-[10px] font-mono text-zinc-600 mt-auto select-none font-bold">Full-time Roles</span>
+                            <span className="text-[9px] font-mono text-zinc-400 select-none">Frontend / React / Next</span>
                         </div>
 
                         {/* Experience Card */}
                         <div className="flex flex-col gap-2 p-4 rounded-2xl border border-zinc-150/70 bg-white/50 backdrop-blur-sm hover:border-zinc-800 transition-all duration-300">
-                            <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-455 uppercase select-none">Experience</span>
-                            <span className="text-sm sm:text-[15px] font-black text-zinc-800">1+ Years Coding</span>
-                            <span className="text-[10px] font-mono text-zinc-500 mt-auto select-none font-bold">Production ready</span>
-                            <span className="text-[9px] font-mono text-zinc-400 select-none">5+ Shipped Products</span>
+                            <span className="text-[10px] font-bold tracking-[0.2em] text-zinc-400 uppercase select-none">Experience</span>
+                            <span className="text-sm sm:text-[15px] font-black text-zinc-800">1+ Years Professional</span>
+                            <span className="text-[10px] font-mono text-zinc-600 mt-auto select-none font-bold">Fonix Technologies</span>
+                            <span className="text-[9px] font-mono text-zinc-400 select-none">Production Grade Code</span>
                         </div>
                     </div>
 
@@ -1070,22 +1069,22 @@ function About() {
                     <div className="w-full h-px bg-zinc-150 mb-8"></div>
 
                     {/* Tools and Call-To-Action buttons */}
-                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-8 pt-2">
+                    <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 pt-2">
 
                         {/* Core Skills Badges */}
                         <div className="flex flex-wrap gap-2 select-none">
-                            {['React', 'Next', 'TypeScript', 'Redux', 'Tailwind'].map((skill) => (
-                                <span key={skill} className="px-3 py-1.5 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 transition-colors text-[9px] font-bold tracking-widest text-zinc-450 uppercase rounded-sm">
+                            {['React.js', 'Next.js', 'TypeScript', 'Redux', 'Tailwind CSS'].map((skill) => (
+                                <span key={skill} className="px-3 py-1.5 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 transition-colors text-[9px] font-bold tracking-widest text-zinc-500 uppercase rounded-sm">
                                     {skill}
                                 </span>
                             ))}
-                            <a href="#skills" className="px-3 py-1.5 bg-zinc-50 hover:bg-zinc-100 border border-zinc-200 transition-colors text-[9px] font-bold tracking-widest text-zinc-450 uppercase rounded-sm cursor-pointer hover:text-black">
-                                +5 More
+                            <a href="#skills" className="px-3 py-1.5 bg-zinc-50 hover:bg-black hover:text-white border border-zinc-200 transition-colors text-[9px] font-bold tracking-widest text-zinc-500 uppercase rounded-sm cursor-pointer">
+                                All Skills →
                             </a>
                         </div>
 
                         {/* CTA Mail Link */}
-                        <a href="mailto:priyanshi3625@gmail.com?subject=Get in touch" className="group flex items-center gap-3 text-[10.5px] font-bold tracking-[0.2em] text-black uppercase shrink-0 pb-1 border-b-2 border-black hover:opacity-70 transition-opacity hover:text-zinc-800 hover:border-zinc-500">
+                        <a href="mailto:priyanshi3625@gmail.com?subject=Frontend Developer Opportunity" className="group flex items-center gap-3 text-[10.5px] font-bold tracking-[0.2em] text-black uppercase shrink-0 pb-1 border-b-2 border-black hover:opacity-70 transition-opacity hover:text-zinc-800 hover:border-zinc-500">
                             Get in touch <ArrowRightIcon className="w-4 h-4 group-hover:-rotate-45 transition-transform duration-300" />
                         </a>
                     </div>

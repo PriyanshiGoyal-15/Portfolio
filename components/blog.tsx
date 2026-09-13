@@ -16,7 +16,7 @@ const BotanicalCorner = ({ className }: { className?: string }) => (
 
 const Blog = () => {
     return (
-        <section id="blog" className="relative w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-12 md:py-24 overflow-hidden bg-white/50">
+        <section id="blog" className="relative w-full max-w-[1440px] mx-auto px-6 sm:px-8 md:px-12 lg:px-16 py-16 md:py-20 overflow-hidden bg-white/50">
             {/* Header */}
             <div className="flex flex-col mb-16 md:mb-24">
                 <div className="flex items-center gap-4 mb-4">

@@ -4,12 +4,13 @@ import About from "@/components/about";
 import Skills from "@/components/skills";
 import Projects from "@/components/projects";
 import Experience from "@/components/experience";
+import Education from "@/components/education";
 import Blog from "@/components/blog";
 import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <main className="w-full">
+    <main className="w-full bg-white">
       <HeroSection />
       <div className="bg-white">
         <About />
@@ -19,6 +20,9 @@ export default function Home() {
         <Projects />
       </div>
       <Experience />
+      <div className="bg-white">
+        <Education />
+      </div>
       <div className="bg-white">
         <Blog />
       </div>

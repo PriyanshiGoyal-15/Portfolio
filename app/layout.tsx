@@ -16,19 +16,20 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://priyanshi-goyal.vercel.app/"),
   title: {
-    default: "Priyanshi Goyal | Developer & Designer",
+    default: "Priyanshi Goyal | Frontend Developer",
     template: "%s | Priyanshi Goyal",
   },
-  description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
+  description:
+    "Frontend Developer with 1+ year professional experience building scalable web applications with React.js, Next.js, TypeScript, and Redux. Immediate Joiner open to relocation across India.",
   keywords: [
     "Priyanshi Goyal",
-    "Portfolio",
-    "Web Developer",
-    "UI/UX Designer",
-    "React Developer",
-    "Next.js",
-    "Frontend Engineer",
     "Frontend Developer",
+    "React.js Developer",
+    "Next.js Developer",
+    "TypeScript",
+    "Redux Toolkit",
+    "MERN Stack",
+    "Web Developer Portfolio",
   ],
   authors: [{ name: "Priyanshi Goyal" }],
   creator: "Priyanshi Goyal",
@@ -37,21 +38,23 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: "https://priyanshi-goyal.vercel.app/",
     siteName: "Priyanshi Goyal Portfolio",
-    title: "Priyanshi Goyal | Developer & Designer",
-    description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
+    title: "Priyanshi Goyal | Frontend Developer",
+    description:
+      "Frontend Developer with 1+ year professional experience building scalable web applications with React.js, Next.js, TypeScript, and Redux. Immediate Joiner open to relocation across India.",
     images: [
       {
         url: "https://priyanshi-goyal.vercel.app/og-banner.png",
         width: 1200,
         height: 630,
-        alt: "Priyanshi Goyal | Developer & Designer",
+        alt: "Priyanshi Goyal | Frontend Developer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Priyanshi Goyal | Developer & Designer",
-    description: "Developer & Designer crafting high-performance digital interfaces with a focus on functional minimalism and clean architecture.",
+    title: "Priyanshi Goyal | Frontend Developer",
+    description:
+      "Frontend Developer with 1+ year professional experience building scalable web applications with React.js, Next.js, TypeScript, and Redux. Immediate Joiner open to relocation across India.",
     images: ["https://priyanshi-goyal.vercel.app/og-banner.png"],
     creator: "@priyanshi",
   },
@@ -78,7 +81,7 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">
+      <body className="min-h-full flex flex-col bg-white text-black">
         <Navbar />
         {children}
       </body>
